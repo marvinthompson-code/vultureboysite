@@ -5,11 +5,11 @@ const Nav = () => {
   return (
     <>
       <TabNav.Root>
-        <TabNav.Link href="#" active>
-          Account
+        <TabNav.Link href="/" active>
+          Home
         </TabNav.Link>
-        <TabNav.Link href="#">Documents</TabNav.Link>
-        <TabNav.Link href="#">Settings</TabNav.Link>
+        <TabNav.Link href="/projects">Projects</TabNav.Link>
+        <TabNav.Link href="contact">Contact</TabNav.Link>
       </TabNav.Root>
     </>
   );
