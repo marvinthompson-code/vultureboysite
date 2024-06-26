@@ -1,0 +1,15 @@
+@font-face {
+    font-family: MonumentExtendedReg;
+    src: url("../fonts/MonumentExtended-Regular.otf");
+}
+
+.BannerTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.BannerTextContainer > * {
+    margin: 10px 0;
+}
+

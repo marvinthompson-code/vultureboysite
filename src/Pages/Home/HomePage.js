@@ -1,15 +1,24 @@
-import { Button } from "@radix-ui/themes";
+import "../../css/Pages/Home.css";
 import Banner from "../../Components/Home/Banner";
+import { Link } from "react-router-dom";
+
 const HomePage = () => {
   return (
-    <div className="HomePageContainer">
-      <Banner />
-      <div>
-        <Button size="2" color="gray" variant="outline">
-          Projects
-        </Button>
+    <>
+      <div className="bannerContainer">
+        <Banner />
+        <div
+          style={{
+            width: "85%",
+            textAlign: "right",
+          }}
+        >
+          <Link to={"/projects"} id="viewProjects">
+            VIEW PROJECTS
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
