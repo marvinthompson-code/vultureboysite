@@ -8,7 +8,7 @@ import HomePage from "./Pages/Home/HomePage";
 
 // Components
 import Nav from "./Components/Nav/Nav";
-import ProjectsPage from "./Pages/Projects/ProjectsPage";
+import VideosPage from "./Pages/Videos/VideosPage";
 import ContactPage from "./Pages/Contact/ContactPage";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path="/" Component={HomePage} />
-        <Route exact path="/projects" Component={ProjectsPage} />
+        <Route exact path="/videos" Component={VideosPage} />
         <Route exact path="/contact" Component={ContactPage} />
       </Routes>
     </div>

@@ -38,9 +38,7 @@ const Videos = () => {
               />
             </Inset>
             <Text as="p" size="3">
-              <Strong>Typography</Strong> is the art and technique of arranging
-              type to make written language legible, readable and appealing when
-              displayed.
+              <Strong>"NODE"</Strong>, NULL
             </Text>
           </Card>
         </Box>
@@ -60,9 +58,27 @@ const Videos = () => {
               />
             </Inset>
             <Text as="p" size="3">
-              <Strong>Typography</Strong> is the art and technique of arranging
-              type to make written language legible, readable and appealing when
-              displayed.
+              <Strong>"DENY"</Strong>, NULL
+            </Text>
+          </Card>
+        </Box>
+        <Box>
+          <Card size="2">
+            <Inset clip="padding-box" side="top" pb="current">
+              <iframe
+                src="https://www.youtube.com/embed/Bk2Le6LN2D0?si=YH7UJzkXz3obzgDm"
+                alt="Bold typography"
+                style={{
+                  display: "block",
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "350px",
+                  backgroundColor: "var(--gray-5)",
+                }}
+              />
+            </Inset>
+            <Text as="p" size="3">
+              <Strong>"HALO Vocal Highlight"</Strong>, NULL
             </Text>
           </Card>
         </Box>

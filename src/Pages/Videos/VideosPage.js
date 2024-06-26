@@ -1,6 +1,6 @@
 import Videos from "../../Components/Projects/Videos";
 
-const ProjectsPage = () => {
+const VideosPage = () => {
   return (
     <div>
       <Videos />
@@ -8,4 +8,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default VideosPage;

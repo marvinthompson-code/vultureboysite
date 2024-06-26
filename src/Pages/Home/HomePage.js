@@ -23,7 +23,17 @@ const HomePage = () => {
               fontFamily: "MonumentExtendedReg",
             }}
           >
-            VIEW PROJECTS
+            VIDEOS
+          </Button>
+          <Button
+            variant="outline"
+            color="gray"
+            highContrast={true}
+            style={{
+              fontFamily: "MonumentExtendedReg",
+            }}
+          >
+            PHOTOS
           </Button>
         </Flex>
       </div>
