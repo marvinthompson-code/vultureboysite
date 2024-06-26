@@ -1,5 +1,11 @@
+import Videos from "../../Components/Projects/Videos";
+
 const ProjectsPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Videos />
+    </div>
+  );
 };
 
 export default ProjectsPage;

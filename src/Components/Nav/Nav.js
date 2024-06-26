@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <TabNav.Root>
-        <TabNav.Link href="/" className="NavLinkTab" active>
+        <TabNav.Link href="/" className="NavLinkTab">
           HOME
         </TabNav.Link>
         <TabNav.Link href="/projects" className="NavLinkTab">

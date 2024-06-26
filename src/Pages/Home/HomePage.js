@@ -1,5 +1,6 @@
 import "../../css/Pages/Home.css";
 import Banner from "../../Components/Home/Banner";
+import { Flex, Button } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -7,16 +8,24 @@ const HomePage = () => {
     <>
       <div className="bannerContainer">
         <Banner />
-        <div
+        <Flex
+          align="center"
+          gap="3"
           style={{
-            width: "85%",
-            textAlign: "right",
+            justifyContent: "center",
           }}
         >
-          <Link to={"/projects"} id="viewProjects">
+          <Button
+            variant="outline"
+            color="gray"
+            highContrast={true}
+            style={{
+              fontFamily: "MonumentExtendedReg",
+            }}
+          >
             VIEW PROJECTS
-          </Link>
-        </div>
+          </Button>
+        </Flex>
       </div>
     </>
   );

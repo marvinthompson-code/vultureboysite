@@ -1,5 +1,5 @@
 import "../../css/Components/Banner.css";
-import { Text } from "@radix-ui/themes";
+import { Text , Heading} from "@radix-ui/themes";
 import Portrait from "../../Images/VBBLACK.jpg"
 
 const Banner = () => {
@@ -25,7 +25,7 @@ const Banner = () => {
           width: "70%",
         }}
       >
-        <Text
+        <Heading
           size={"9"}
           style={{
             fontFamily: "MonumentExtendedReg",
@@ -34,7 +34,7 @@ const Banner = () => {
           }}
         >
           VULTUREBOY
-        </Text>
+        </Heading>
         <Text
           size={"6"}
           style={{
