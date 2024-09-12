@@ -5,3 +5,15 @@
 .bannerContainer {
     justify-content: center;
 }
+
+.HomePhotoButton:hover {
+    cursor: pointer;
+    color: #EE0B1D !important;
+    transition: ease-in-out 1s;
+}
+
+.HomeVideoButton:hover {
+    cursor: pointer;
+    color: #EE0B1D !important;
+    transition: ease-in-out 1s;
+}

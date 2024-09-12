@@ -1,0 +1,7 @@
+.PhotoListContainer > *{
+    margin: 20px 0;
+}
+
+.PhotoHeading {
+    margin: 20px;
+}

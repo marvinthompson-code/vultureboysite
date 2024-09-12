@@ -1,43 +1,31 @@
 import "../../css/Pages/Home.css";
 import Banner from "../../Components/Home/Banner";
-import { Flex, Button } from "@radix-ui/themes";
-import { Link } from "react-router-dom";
+import IconList from "../../Components/icon/IconList";
+import { Container, Box } from "@mui/material";
 
 const HomePage = () => {
   return (
-    <>
-      <div className="bannerContainer">
-        <Banner />
-        <Flex
-          align="center"
-          gap="3"
+    <Container className="bannerContainer">
+      <Box
+        sx={{
+          display: "table",
+          height: "100vh",
+          overflow: "hidden",
+        }}
+      >
+        <div
           style={{
-            justifyContent: "center",
+            display: "table-cell",
+            verticalAlign: "middle",
           }}
         >
-          <Button
-            variant="outline"
-            color="gray"
-            highContrast={true}
-            style={{
-              fontFamily: "MonumentExtendedReg",
-            }}
-          >
-            VIDEOS
-          </Button>
-          <Button
-            variant="outline"
-            color="gray"
-            highContrast={true}
-            style={{
-              fontFamily: "MonumentExtendedReg",
-            }}
-          >
-            PHOTOS
-          </Button>
-        </Flex>
-      </div>
-    </>
+          <Banner />
+          <IconList />
+        </div>
+        
+      </Box>
+      
+    </Container>
   );
 };
 
