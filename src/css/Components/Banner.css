@@ -25,3 +25,9 @@
         flex-direction: column;
     }
 }
+
+.vultureboy:hover {
+  transition: 1s ease-in-out;
+  color: rgb(190, 190, 190);
+  cursor: pointer ;
+}

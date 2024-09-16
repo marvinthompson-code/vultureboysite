@@ -40,12 +40,14 @@ const Banner = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-evenly",
+          
         }}
       >
         <Box
           className="BannerImageContainer"
           style={{
             maxWidth: "500px",
+            paddingTop: "20px"
           }}
         >
           <img
@@ -71,6 +73,7 @@ const Banner = () => {
           <Box>
             <ThemeProvider theme={theme}>
               <Typography
+              className="vultureboy"
                 variant="h1"
                 sx={{
                   fontFamily: "MonumentExtendedReg",
@@ -91,12 +94,16 @@ const Banner = () => {
                   textAlign: "start",
                 }}
               >
-                <span>'EGODETH | LEVIATHAN' - OUT NOW</span>
+                <span>'EGODETH | LEVIATHAN' - OUT NOW ON ALL PLATFORMS</span>
               </Typography>
             </ThemeProvider>
           </Box>
 
-          <Box>
+          <Box
+            sx={{
+              padding: "15px",
+            }}
+          >
             <iframe
               style={{
                 borderRadius: "12px",

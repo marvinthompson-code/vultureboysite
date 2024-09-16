@@ -1,11 +1,12 @@
 import "../../css/Pages/Home.css";
 import Banner from "../../Components/Home/Banner";
 import IconList from "../../Components/icon/IconList";
-import { Container, Box } from "@mui/material";
+import YoutubeBanner from "../../Components/Home/YoutubeBanner";
+import { Box } from "@mui/material";
 
 const HomePage = () => {
   return (
-    <Container className="bannerContainer">
+    <>
       <Box
         sx={{
           display: "table",
@@ -20,12 +21,23 @@ const HomePage = () => {
           }}
         >
           <Banner />
-          <IconList />
+          <Box
+            sx={{
+              padding: "50px",
+            }}
+          >
+            <IconList />
+          </Box>
+          <Box
+            sx={{
+              paddingTop: "30px",
+            }}
+          >
+            <YoutubeBanner />
+          </Box>
         </div>
-        
       </Box>
-      
-    </Container>
+    </>
   );
 };
 

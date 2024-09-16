@@ -1,5 +1,6 @@
 import "./App.css";
 import "../src/styles.css";
+
 import { Route, Routes } from "react-router-dom";
 import { Container } from "@mui/material";
 
@@ -7,7 +8,7 @@ import { Container } from "@mui/material";
 import HomePage from "./Pages/Home/HomePage";
 
 // Components
-// import Nav from "./Components/Nav/Nav";
+import Nav from "./Components/Nav/Nav";
 import ContactPage from "./Pages/Contact/ContactPage";
 
 function App() {

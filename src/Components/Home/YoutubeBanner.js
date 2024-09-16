@@ -1,4 +1,5 @@
-import { Margin } from "@mui/icons-material";
+import "../../css/Components/Banner.css";
+
 import {
   Container,
   Box,
@@ -6,6 +7,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
+
 const YoutubeBanner = () => {
   const theme = createTheme();
 
@@ -20,63 +22,57 @@ const YoutubeBanner = () => {
   };
 
   theme.typography.h2 = {
-    fontSize: "0.8rem",
+    fontSize: "1.0rem",
     "@media (min-width:600px)": {
-      fontSize: "1.0rem",
+      fontSize: "1.3rem",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.2rem",
+      fontSize: "2.2rem",
     },
   };
 
   return (
     <Container>
-        
       <Container
-        className="YoutubeBanner"
-        style={{
+        className="BannerContainer"
+        sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           justifyContent: "space-evenly",
+          
         }}
       >
-        <Box sx={{
-            position: "absolute"
-
-        }}>
+        <Box>
           <ThemeProvider theme={theme}>
-
             <Typography
               variant="h2"
               sx={{
                 fontFamily: "MonumentExtendedReg",
-                textAlign: "start",
+                textAlign: "middle",
                 wordBreak: "break-word",
                 width: "100%",
-                position: "relative",
-                top: "-50%"
+                color: "black",
+                paddingBottom: "30px",
               }}
             >
               STREAM 'LEVIATHAN' INSTRUMENTAL ON YOUTUBE
             </Typography>
-
           </ThemeProvider>
         </Box>
 
-       
-          <Box
-            className="YoutubeContainer"
-            style={{
-              width: "80%",
-              padding: "10px"
-            }}
-          >
+        <Container
+          sx={{
+            justifyContent: "center",
+          }}
+        >
+          <Box>
             <iframe
               iframe
               width="100%"
-              height="400"
+              height="250px"
               style={{
                 borderRadius: "20px",
+                filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8))",
               }}
               src={`https://www.youtube.com/embed/EKxulLsrbqM?si=V3Z8UCJ6H-Sd377i`}
               title="YouTube video player"
@@ -86,7 +82,7 @@ const YoutubeBanner = () => {
               allowfullscreen
             />
           </Box>
-        
+        </Container>
       </Container>
     </Container>
   );
