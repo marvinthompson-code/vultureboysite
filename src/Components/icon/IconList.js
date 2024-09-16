@@ -10,6 +10,8 @@ import instagram from "../../css/icons/instagram.svg";
 import tiktok from "../../css/icons/tiktok.svg";
 import youtube from "../../css/icons/youtube.svg";
 
+// window.open('https://vultureboylives.bandcamp.com/album/egodeth-leviathan','_blank')
+
 const IconList = () => {
   return (
     <Container
@@ -29,7 +31,12 @@ const IconList = () => {
       >
         <Icon
           className="iconLink"
-          onclick=" window.open('https://open.spotify.com/artist/4ggcd1wjSJOo6hilDd2yJW?si=GHVsh4fuTY-r-DhRV0W-FA','_blank')"
+          onClick={() => {
+            window.open(
+              "https://open.spotify.com/artist/4ggcd1wjSJOo6hilDd2yJW?si=GHVsh4fuTY-r-DhRV0W-FA",
+              "_blank"
+            );
+          }}
           sx={{
             overflow: "unset",
           }}
@@ -45,7 +52,12 @@ const IconList = () => {
 
         <Icon
           className="iconLink"
-          onclick=" window.open('https://music.apple.com/us/album/egodeth-leviathan-single/1765689195','_blank')"
+          onClick={() => {
+            window.open(
+              "https://music.apple.com/us/album/egodeth-leviathan-single/1765689195",
+              "_blank"
+            );
+          }}
           sx={{
             overflow: "unset",
           }}
@@ -61,7 +73,12 @@ const IconList = () => {
 
         <Icon
           className="iconLink"
-          onClick=" window.open('https://vultureboylives.bandcamp.com/album/egodeth-leviathan','_blank')"
+          onClick={() => {
+            window.open(
+              "https://vultureboylives.bandcamp.com/album/egodeth-leviathan",
+              "_blank"
+            );
+          }}
           sx={{
             overflow: "unset",
           }}
@@ -76,6 +93,12 @@ const IconList = () => {
         </Icon>
         <Icon
           className="iconLink"
+          onClick={() => {
+            window.open(
+              "https://www.youtube.com/@VULTUREBOY.VAGABOND",
+              "_blank"
+            );
+          }}
           sx={{
             overflow: "unset",
           }}
@@ -90,6 +113,9 @@ const IconList = () => {
         </Icon>
         <Icon
           className="iconLink"
+          onClick={() => {
+            window.open("https://www.instagram.com/_vultureboy", "_blank");
+          }}
           sx={{
             overflow: "unset",
           }}
@@ -104,6 +130,12 @@ const IconList = () => {
         </Icon>
         <Icon
           className="iconLink"
+          onClick={() => {
+            window.open(
+              "https://www.tiktok.com/@vultureboy_vagabond",
+              "_blank"
+            );
+          }}
           sx={{
             overflow: "unset",
           }}
