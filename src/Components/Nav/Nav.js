@@ -56,18 +56,6 @@ const Nav = () => {
           </ListItemButton>
         </ListItem>
         </a>
-        <ListItem key={navItems[2]} disablePadding>
-          <ListItemButton
-            sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
-          >
-            <ListItemText
-              primary={navItems[2]}
-              sx={{
-                fontFamily: "MonumentExtendedReg",
-              }}
-            />
-          </ListItemButton>
-        </ListItem>
       </List>
     </Box>
   );
@@ -111,13 +99,6 @@ const Nav = () => {
                 {navItems[1]}
               </Button>
             </a>
-
-            <Button
-              key={navItems[2]}
-              sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
-            >
-              {navItems[2]}
-            </Button>
           </Box>
         </Toolbar>
       </AppBar>
