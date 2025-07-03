@@ -54,7 +54,7 @@ const IconList = () => {
           className="iconLink"
           onClick={() => {
             window.open(
-              "https://music.apple.com/us/album/egodeth-leviathan-single/1765689195",
+              "https://music.apple.com/us/album/vagabond/1814267124",
               "_blank"
             );
           }}
@@ -75,7 +75,7 @@ const IconList = () => {
           className="iconLink"
           onClick={() => {
             window.open(
-              "https://vultureboylives.bandcamp.com/album/egodeth-leviathan",
+              "https://vultureboylives.bandcamp.com/album/vagabond",
               "_blank"
             );
           }}

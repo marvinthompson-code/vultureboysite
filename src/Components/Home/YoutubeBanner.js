@@ -32,13 +32,19 @@ const YoutubeBanner = () => {
   };
 
   return (
-    <Container id="vagabondStream">
+    <Container id="vagabondStream" style={{
+      height: "100vh",
+      display: "flex",
+      flexDirection: "row",
+      width: "100%"
+    }}>
       <Container
         className="BannerContainer"
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
+          margin: "auto"
         }}
       >
         <Box>
@@ -51,7 +57,8 @@ const YoutubeBanner = () => {
                 wordBreak: "break-word",
                 width: "100%",
                 color: "black",
-                paddingBottom: "30px",
+                paddingBottom: "10px",
+                paddingTop: "10px"
               }}
             >
               <span

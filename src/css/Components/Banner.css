@@ -22,6 +22,12 @@
   margin: 10px 0;
 }
 
+.albumArtContainer:hover {
+  cursor: pointer;
+  transition: 1s;
+  
+}
+
 @media only screen and (max-width: 425px) {
     .BannerContainer {
         display: flex;
@@ -48,6 +54,10 @@
 
     .vultureboy {
       font-size: 50px !important;
+    }
+
+    root {
+      padding-left: unset !important;
     }
 }
 

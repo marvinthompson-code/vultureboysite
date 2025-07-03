@@ -43,18 +43,32 @@ const Nav = () => {
           </ListItem>
         </a>
         <a href="#vagabondStream">
-        <ListItem key={navItems[1]} disablePadding>
-          <ListItemButton
-            sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
-          >
-            <ListItemText
-              primary={navItems[1]}
-              sx={{
-                fontFamily: "MonumentExtendedReg",
-              }}
-            />
-          </ListItemButton>
-        </ListItem>
+          <ListItem key={navItems[1]} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
+            >
+              <ListItemText
+                primary={navItems[1]}
+                sx={{
+                  fontFamily: "MonumentExtendedReg",
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
+        </a>
+        <a href="https://mailchi.mp/6f1d07f00211/mailing-list" target="_blank">
+          <ListItem key={navItems[2]} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
+            >
+              <ListItemText
+                primary={navItems[2]}
+                sx={{
+                  fontFamily: "MonumentExtendedReg",
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
         </a>
       </List>
     </Box>
@@ -97,6 +111,17 @@ const Nav = () => {
                 sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
               >
                 {navItems[1]}
+              </Button>
+            </a>
+            <a
+              href="https://mailchi.mp/6f1d07f00211/mailing-list"
+              target="_blank"
+            >
+              <Button
+                key={navItems[2]}
+                sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
+              >
+                {navItems[2]}
               </Button>
             </a>
           </Box>
