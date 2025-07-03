@@ -19,7 +19,7 @@ function App() {
         height: "100vh",
       }}
     >
-      {/* <Nav /> */}
+      <Nav />
       <Routes>
         <Route exact path="/" Component={HomePage} />
         <Route exact path="/contact" Component={ContactPage} />

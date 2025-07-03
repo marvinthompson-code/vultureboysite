@@ -4,7 +4,7 @@ import "../../css/Components/Icon.css";
 
 // icons
 import spotify from "../../css/icons/spotify.svg";
-import apple from "../../css/icons/apple.svg";
+import apple from "../../css/icons/icons8-itunes.svg";
 import bandcamp from "../../css/icons/bandcamp.svg";
 import instagram from "../../css/icons/instagram.svg";
 import tiktok from "../../css/icons/tiktok.svg";

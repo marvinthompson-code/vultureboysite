@@ -1,5 +1,7 @@
 import "../../css/Components/Banner.css";
 import Portrait from "../../Images/vbicon.png";
+import albumArt from "../../Images/vagabondcovernotext.png";
+import IconList from "../icon/IconList";
 
 import {
   Typography,
@@ -7,6 +9,7 @@ import {
   ThemeProvider,
   Container,
   Box,
+  Divider,
 } from "@mui/material";
 
 const Banner = () => {
@@ -33,36 +36,55 @@ const Banner = () => {
   };
 
   return (
-    <Container>
+    <Container
+    className="ParentBannerContainer"
+    id="home"
+      style={{
+        display: "flex",
+        height: "100vh",
+        flexDirection: "row"
+      }}
+    >
+      <Container
+        className="albumArtParent"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          height: "100%",
+        }}
+      >
+        <Container
+          className="albumArtContainer"
+          style={{
+            margin: "auto",
+          }}
+        >
+          <Box
+            style={{
+              maxWidth: "100%",
+              paddingTop: "20px",
+            }}
+          >
+            <img
+              src={albumArt}
+              style={{
+                width: "100%",
+                boxShadow: "5px 5px 5px rgb(0, 0, 0)",
+              }}
+            />
+          </Box>
+          
+        </Container>
+      </Container>
+
       <Container
         className="BannerContainer"
         sx={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-evenly",
-          
         }}
       >
-        <Box
-          className="BannerImageContainer"
-          style={{
-            maxWidth: "500px",
-            paddingTop: "20px"
-          }}
-        >
-          <img
-            src={Portrait}
-            alt="Black and white portrait of Vultureboy"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              borderRadius: "var(--radius-2)",
-              filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8))",
-              borderRadius: "20px",
-            }}
-          />
-        </Box>
-
         <Container
           className="BannerTextContainer"
           style={{
@@ -73,11 +95,10 @@ const Banner = () => {
           <Box>
             <ThemeProvider theme={theme}>
               <Typography
-              className="vultureboy"
+                className="vultureboy"
                 variant="h1"
                 sx={{
                   fontFamily: "MonumentExtendedReg",
-                  fontSize: 40,
                   letterSpacing: "5px",
                   wordWrap: "break-word",
                   textAlign: "start",
@@ -90,33 +111,53 @@ const Banner = () => {
               <Typography
                 variant="h2"
                 sx={{
-                  fontFamily: "MonumentExtendedReg",
-                  textAlign: "start",
+                  fontFamily: "AkiraExpanded",
+                  textAlign: "middle",
+                  fontSize: "1.5em !important",
+                  paddingBottom: "5px",
+                  paddingTop: "5px",
                 }}
               >
-                <span>'EGODETH | LEVIATHAN' - OUT NOW ON ALL PLATFORMS</span>
+                <span>
+                  <span
+                    style={{
+                      fontSize: "1.3em",
+                      fontStyle: "italic"
+                    }}
+                  >
+                    "VAGABOND"
+                  </span>{" "}
+                </span>
+              </Typography>
+            </ThemeProvider>
+            <ThemeProvider theme={theme}>
+              <Typography
+                className="vultureboy"
+                variant="h3"
+                sx={{
+                  fontFamily: "MonumentExtendedReg",
+                  letterSpacing: "10px",
+                  wordWrap: "break-word",
+                  textAlign: "middle",
+                  fontSize: "1.1em !important",
+                }}
+              >
+                OUT NOW
               </Typography>
             </ThemeProvider>
           </Box>
-
-          <Box
+          <Divider variant="middle"></Divider>
+          <Box id="tidalBox"
             sx={{
               padding: "15px",
             }}
           >
-            <iframe
-              style={{
-                borderRadius: "12px",
-                filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8))",
-              }}
-              src="https://open.spotify.com/embed/album/78LeEbzpmYxoN7yHaD67af?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
+            <iframe id="tidalIframe" src="https://embed.tidal.com/albums/435773042" width="100%" height="152" allow="encrypted-media" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" title="TIDAL Embed Player" />
+          </Box>
+          <Box sx={{
+          
+          }}>
+            <IconList />
           </Box>
         </Container>
       </Container>

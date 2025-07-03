@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Contact"];
+const navItems = ["Home", "VAGABOND", "Mailing list"];
 
 const Nav = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,18 +28,46 @@ const Nav = () => {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg", }}>
+        <a href="#home">
+          <ListItem key={navItems[0]} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
+            >
               <ListItemText
-                primary={item}
+                primary={navItems[0]}
                 sx={{
                   fontFamily: "MonumentExtendedReg",
                 }}
               />
             </ListItemButton>
           </ListItem>
-        ))}
+        </a>
+        <a href="#vagabondStream">
+        <ListItem key={navItems[1]} disablePadding>
+          <ListItemButton
+            sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
+          >
+            <ListItemText
+              primary={navItems[1]}
+              sx={{
+                fontFamily: "MonumentExtendedReg",
+              }}
+            />
+          </ListItemButton>
+        </ListItem>
+        </a>
+        <ListItem key={navItems[2]} disablePadding>
+          <ListItemButton
+            sx={{ textAlign: "center", fontFamily: "MonumentExtendedReg" }}
+          >
+            <ListItemText
+              primary={navItems[2]}
+              sx={{
+                fontFamily: "MonumentExtendedReg",
+              }}
+            />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -66,14 +94,30 @@ const Nav = () => {
           </IconButton>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            <a href="#home">
               <Button
-                key={item}
-                sx={{ color: "#fff", fontFamily: "MonumentExtendedReg" }}
+                key={navItems[0]}
+                sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
               >
-                {item}
+                {navItems[0]}
               </Button>
-            ))}
+            </a>
+
+            <a href="#vagabondStream">
+              <Button
+                key={navItems[1]}
+                sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
+              >
+                {navItems[1]}
+              </Button>
+            </a>
+
+            <Button
+              key={navItems[2]}
+              sx={{ color: "#fff", fontFamily: "AkiraExpanded" }}
+            >
+              {navItems[2]}
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
@@ -90,6 +134,9 @@ const Nav = () => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "black",
+              color: "white",
+              fontFamily: "AkiraExpanded",
             },
           }}
         >

@@ -32,14 +32,13 @@ const YoutubeBanner = () => {
   };
 
   return (
-    <Container>
+    <Container id="vagabondStream">
       <Container
         className="BannerContainer"
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          
         }}
       >
         <Box>
@@ -55,7 +54,15 @@ const YoutubeBanner = () => {
                 paddingBottom: "30px",
               }}
             >
-              STREAM 'LEVIATHAN' INSTRUMENTAL ON YOUTUBE
+              <span
+                style={{
+                  fontFamily: "AkiraExpanded",
+                  fontStyle: "italic",
+                }}
+              >
+                VAGABOND
+              </span>{" "}
+              | FULL MIXTAPE STREAM
             </Typography>
           </ThemeProvider>
         </Box>
@@ -65,22 +72,17 @@ const YoutubeBanner = () => {
             justifyContent: "center",
           }}
         >
-          <Box>
+          <Box className="videoBox">
             <iframe
-              iframe
               width="100%"
-              height="250px"
-              style={{
-                borderRadius: "20px",
-                filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8))",
-              }}
-              src={`https://www.youtube.com/embed/EKxulLsrbqM?si=V3Z8UCJ6H-Sd377i`}
-              title="YouTube video player"
+              height="747"
+              src="https://www.youtube.com/embed/qztqqbERf9g"
+              title="VAGABOND - VULTUREBOY [FULL MIXTAPE STREAM]"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            />
+            ></iframe>
           </Box>
         </Container>
       </Container>

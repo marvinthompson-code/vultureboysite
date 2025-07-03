@@ -21,13 +21,13 @@ const HomePage = () => {
           }}
         >
           <Banner />
-          <Box
+          {/* <Box
             sx={{
               padding: "50px",
             }}
           >
             <IconList />
-          </Box>
+          </Box> */}
           <Box
             sx={{
               paddingTop: "30px",

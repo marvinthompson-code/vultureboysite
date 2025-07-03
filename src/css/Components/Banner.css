@@ -8,6 +8,10 @@
   src: url("../fonts/MonumentExtended-Regular.otf");
 }
 
+@font-face {
+  font-family: AkiraExpanded;
+  src: url("../fonts/Akira\ Expanded\ Demo.otf")
+}
 .BannerTextContainer {
   display: flex;
   justify-content: center;
@@ -23,6 +27,27 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        width: 100%;
+    }
+    .ParentBannercontainer {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .albumArtContainer {
+      display: none;
+    }
+
+    .albumArtParent {
+      display: none;
+    }
+
+    .videoBox {
+      width: 100%
+    }
+
+    .vultureboy {
+      font-size: 50px !important;
     }
 }
 
@@ -30,4 +55,8 @@
   transition: 1s ease-in-out;
   color: rgb(190, 190, 190);
   cursor: pointer ;
+}
+
+.vultureboy {
+  font-size: 3.1em !important;
 }
